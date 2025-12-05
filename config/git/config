@@ -1,0 +1,20 @@
+[user]
+	name = ikura-hamu
+	email = 104292023+ikura-hamu@users.noreply.github.com
+[core]
+	editor = code --wait
+[sequence]
+	editor = code --wait
+[commit]
+	template = ~/.config/git/commit_template.txt
+
+[init]
+	defaultBranch = main
+[push]
+	autoSetupRemote = true
+[credential "https://github.com"]
+	helper = 
+	helper = !gh auth git-credential
+[credential "https://gist.github.com"]
+	helper = 
+	helper = !gh auth git-credential

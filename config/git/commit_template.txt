@@ -1,0 +1,21 @@
+
+
+# emoji prefix: mean
+# ✨ fe: :feature: Introduce new features.
+# 🐛 bu: :bug: Fix a bug.
+# ✅ te: :white_checkmark: Add or update test.
+# 🩹 ad: :adhesive_bandage: Simple fix for a non-critical issue.
+# ♻️  re: :recycle: Refactor code.
+# 💥 bo: :boom: Introduce breaking changes.
+# ⚡ zap: :zap: Improve performance.
+# 🚧 wip: :construction: Work in progress.
+# 🎨 fo: :art: Improve structure / format of the code.
+# 🔥 rm: :fire: Remove code or files.
+# 🔧 co: :wrench: Add or update configuration files.
+# 📝 do: :memo: Add or update documentation.
+# ⬆️  up: :arrow_up: Upgrade dependencies.
+# 💄 st: :lipstick: Add or update the UI and style files.
+# 🏭 ge: :factory: Generate code.
+
+# https://gitmoji.dev/
+# To change this template message, edit ~/.gittemplate.txt .
