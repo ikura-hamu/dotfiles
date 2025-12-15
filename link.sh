@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -eu -o pipefail # 失敗したら異常終了
+
 SOURCE_DIR="$(dirname $(realpath $0))/config"
 TARGET_DIR="$HOME/.config"
 
@@ -8,7 +10,7 @@ find "$SOURCE_DIR" -type f | while read file; do
   target_path="$TARGET_DIR/$relative_path"
   target_dir="$(dirname "$target_path")"
   
-  mkdir --parents "$target_dir"
-  ln --symbolic --force "$file" "$target_path"
+  mkdir -p "$target_dir"
+  ln -s -F "$file" "$target_path"
   echo "Linked: $target_path -> $file"
 done
