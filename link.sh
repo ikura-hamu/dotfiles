@@ -11,6 +11,12 @@ find "$SOURCE_DIR" -type f | while read file; do
   target_dir="$(dirname "$target_path")"
   
   mkdir -p "$target_dir"
-  ln -s -F "$file" "$target_path"
+  
+  # 既存のシンボリックリンクまたはファイルを削除してから新しいシンボリックリンクを作成
+  if [ -e "$target_path" ] || [ -L "$target_path" ]; then
+    rm -f "$target_path"
+  fi
+  ln -s "$file" "$target_path"
+  
   echo "Linked: $target_path -> $file"
 done
