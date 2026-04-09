@@ -1,5 +1,4 @@
 [tools]
-gemini-cli = "latest"
 github-cli = "latest"
 "github:lusingander/serie" = "latest"
 codex = "latest"
